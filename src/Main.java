@@ -1,5 +1,8 @@
+import com.neos.array.ArrInt;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ArrInt arrInt = new ArrInt();
+        arrInt.printPrimePairs();
     }
 }
