@@ -4,5 +4,6 @@ public class Main {
     public static void main(String[] args) {
         ArrInt arrInt = new ArrInt();
         arrInt.printPrimePairs();
+        arrInt.printSimilarNumber();
     }
 }

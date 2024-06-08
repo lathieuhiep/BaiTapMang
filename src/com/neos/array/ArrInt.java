@@ -39,5 +39,27 @@ public class ArrInt {
     }
 
     // In ra vị trí của phần tử giống nhau
+    public void printSimilarNumber() {
+        System.out.println("\nPhần tử giống nhau");
+        boolean arrTrace[] = new boolean[arrInt.length];
 
+        for (int i = 0; i < arrInt.length; i++) {
+          if (arrTrace[i]) {
+              continue;
+          }
+
+          printPositionOfNumber(arrInt[i], i, arrTrace);
+        }
+    }
+
+    private void printPositionOfNumber(int number, int start, boolean[] arrTrace) {
+        System.out.print("\n" + number + ": " + start);
+
+        for (int i = start + 1; i < arrInt.length; i++) {
+            if (arrInt[i] == number) {
+                System.out.print(", " + i );
+                arrTrace[i] = true;
+            }
+        }
+    }
 }
